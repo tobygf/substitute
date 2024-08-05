@@ -1,0 +1,15 @@
+substitute is a utility for finding and replacing text. It is meant to
+behave similarly to the "s" command available in sed and other
+editing tools. However, it is more atomic and less featureful than something
+like sed. This quality of substitute might be useful to you. It certainly
+makes its implementation easier. :)
+
+subsitute takes a regex pattern and a replacement string. The pattern should
+be a POSIX (extended) regular expression. The replacement string may contain
+"\1", "\2", ..., "\9", which refer to captured submatches. It also may contain
+"&", which refers to the entire matched string.
+
+substitute is implemented in Haskell. I've tried to leverage Haskell's support
+for lazy IO to make substitute a "good citizen" of unix(-like) pipelines. YMMV.
+
+substitue is considered to be under development. It may contain bugs.

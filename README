@@ -1,0 +1,12 @@
+== README ==
+
+substitute is a small utility for finding and replacing text. For more end-user
+information see manual.txt or run substitute with the "-h" flag.
+
+= Build from source with Cabal =
+
+Invoke `cabal build` in the directory which contains substitute.cabal.
+
+= Install from source with Cabal =
+
+Invoke `cabal install` in the directory which contains substitute.cabal.
