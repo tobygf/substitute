@@ -12,4 +12,4 @@ be a POSIX (extended) regular expression. The replacement string may contain
 substitute is implemented in Haskell. I've tried to leverage Haskell's support
 for lazy IO to make substitute a "good citizen" of unix(-like) pipelines. YMMV.
 
-substitue is considered to be under development. It may contain bugs.
+substitue is considered "under development". It may contain bugs.
